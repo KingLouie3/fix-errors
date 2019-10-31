@@ -5,3 +5,5 @@ function printName (){
 }
 
 printName();
+
+//var nam should be name
