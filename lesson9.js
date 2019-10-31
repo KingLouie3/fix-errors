@@ -1,6 +1,6 @@
-/*Desired result Print out all names except the name passed into the function 
-                        ######NOTE####### 
-let is just another way to assign a variable like var except 
+/*Desired result Print out all names except the name passed into the function
+                        ######NOTE#######
+let is just another way to assign a variable like var except
 it is locally scoped to the function. Var would assign our variable Globally in
 our code.
 */
@@ -11,7 +11,8 @@ var people = [
     ]
 
 var nameFilter = function(name) {
-    let name = "Eric"
+   let filteredName = name;
+
     for (let i = 0; i < people.length; i++) {
         let name = people[i].name;
         if (name != filteredName) {
@@ -21,3 +22,5 @@ var nameFilter = function(name) {
 }
 
 nameFilter("Roger");
+
+//Answer is change the name argument to filteredName and remove let name "Eric"
